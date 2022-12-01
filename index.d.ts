@@ -185,11 +185,6 @@ export declare class Response {
   getHeader(key: string): string;
   hasHeader(key: string): boolean;
   removeHeader(key: string): this;
-  getLink(
-    s3Path: string,
-    expires?: number,
-    callback?: ErrorCallback
-  ): Promise<string>;
   send(body: any): void;
   json(body: any): void;
   jsonp(body: any): void;
